@@ -22,25 +22,29 @@ For this lab, we will be using the same dataset we used in the previous labs. We
 7. Since the model will only accept numerical data, check and make sure that every column is numerical, if some are not, change it using encoding.
 
 
-# Hint for Categorical Variables
+## Hint for Categorical Variables
 
 You should deal with the categorical variables as shown below (for ordinal encoding, dummy code has been provided as well):
-## One hot to state
-## Ordinal to coverage
-## Ordinal to employmentstatus
-## Ordinal to location code
-## One hot to marital status
-## One hot to policy type
-## One hot to policy
-## One hot to renew offercustomer_df
-## One hot to sales channel
-## One hot vehicle class
-## Ordinal vehicle size
+Encoder Type | Column 
+-----------------|-----------------
+One hot | state
+Ordinal | coverage
+Ordinal | employmentstatus
+Ordinal | location code
+One hot | marital status
+One hot | policy type
+One hot | policy
+One hot | renew offercustomer_df
+One hot | sales channel
+One hot | vehicle class
+Ordinal | vehicle size
 
+##### Dummy code
 data["coverage"] = data["coverage"].map({"Basic" : 0, "Extended" : 1, "Premium" : 2})
 
-# given that column "coverage" in the dataframe "data" has three categories:
-# "basic", "extended", and "premium" and values are to be represented in the same order.
+given that column "coverage" in the dataframe "data" has three categories:
+
+"basic", "extended", and "premium" and values are to be represented in the same order.
 
 
 
