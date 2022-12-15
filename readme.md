@@ -3,19 +3,17 @@
 # Lab | Comparing regression models
 
 
-For this lab, we will be using the same dataset we used in the previous labs. We recommend using the same notebook since you will be reusing the same variables you previous created and used in labs. 
+For this lab, we will be using the same dataset we used in the previous labs. Load the cleaned categorical and numerical dataframes that you saved at the end of Monday's labs.
 
 ### Instructions
 
 1. In this final lab, we will model our data. Import sklearn `train_test_split` and separate the data.
 
-2. We will start with removing outliers, if you have not already done so.  We have discussed different methods to remove outliers. Use the one you feel more comfortable with, define a function for that. Use the function to remove the outliers and apply it to the dataframe.
+2. Separate X_train and X_test into numerical and categorical (X_train_cat , X_train_num , X_test_cat , X_test_num)
 
-3. Create a copy of the dataframe for the data wrangling.
+2. Use X_train_num to fit scalers.  Transform BOTH X_train_num and X_test_num.
 
-4. Normalize the continuous variables. You can use any one method you want.
-
-5. Encode the categorical variables (See the hint below for encoding categorical data!!!)
+5. Encode the categorical variables X_train_cat and X_test_cat (See the hint below for encoding categorical data!!!)
 
 6. The time variable can be useful. Try to transform its data into a useful one. Hint: Day week and month as integers might be useful.
 
@@ -39,7 +37,8 @@ One hot | sales channel
 One hot | vehicle class
 Ordinal | vehicle size
 
-##### Dummy code
+### Dummy code
+
 data["coverage"] = data["coverage"].map({"Basic" : 0, "Extended" : 1, "Premium" : 2})
 
 given that column "coverage" in the dataframe "data" has three categories:
