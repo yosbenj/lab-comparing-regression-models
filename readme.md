@@ -57,4 +57,4 @@ given that column "coverage" in the dataframe "data" has three categories:
 
 11. You can check also the `MLPRegressor` for this task!
 
-12. Check and discuss the results.
+12. Check and discuss the results.  
