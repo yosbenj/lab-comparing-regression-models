@@ -5,6 +5,17 @@
 
 For this lab, we will be using the same dataset we used in the previous labs. Load the cleaned categorical and numerical dataframes that you saved at the end of Monday's labs.
 
+## Data Analysis Process
+#### Remember the process:
+
+- Case Study
+- Get data
+- Cleaning/Wrangling/EDA
+- **Processing Data**
+- **Modeling**
+- **Validation**
+- Reporting
+
 ### Instructions
 
 Concatenate Numerical and Categorical dataframes into one dataframe called data.
