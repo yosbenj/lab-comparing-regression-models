@@ -7,6 +7,8 @@ For this lab, we will be using the same dataset we used in the previous labs. Lo
 
 ### Instructions
 
+Concatenate Numerical and Categorical dataframes into one dataframe called data.
+
 1. In this final lab, we will model our data. Import sklearn `train_test_split` and separate the data.
 
 2. Separate X_train and X_test into numerical and categorical (X_train_cat , X_train_num , X_test_cat , X_test_num)
