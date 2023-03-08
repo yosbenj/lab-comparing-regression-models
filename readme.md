@@ -24,15 +24,13 @@ Concatenate Numerical and Categorical dataframes into one dataframe called data.
 
 2. Separate X_train and X_test into numerical and categorical (X_train_cat , X_train_num , X_test_cat , X_test_num)
 
-2. Use X_train_num to fit scalers.  Transform BOTH X_train_num and X_test_num.
+3. Use X_train_num to fit scalers.  Transform BOTH X_train_num and X_test_num.
 
-5. Encode the categorical variables X_train_cat and X_test_cat (See the hint below for encoding categorical data!!!)
+4. Encode the categorical variables X_train_cat and X_test_cat (See the hint below for encoding categorical data!!!)
 
-6. The time variable can be useful. Try to transform its data into a useful one. Hint: Day week and month as integers might be useful.
+5. Since the model will only accept numerical data, check and make sure that every column is numerical, if some are not, change it using encoding.
 
-7. Since the model will only accept numerical data, check and make sure that every column is numerical, if some are not, change it using encoding.
-
-
+# ***********************************************************************************************************************
 ## Hint for Categorical Variables
 
 You should deal with the categorical variables as shown below (for ordinal encoding, dummy code has been provided as well):
@@ -57,15 +55,15 @@ data["coverage"] = data["coverage"].map({"Basic" : 0, "Extended" : 1, "Premium" 
 given that column "coverage" in the dataframe "data" has three categories:
 
 "basic", "extended", and "premium" and values are to be represented in the same order.
+# ******************************************************************************************************************************
 
 
+6. Try a simple linear regression with all the data to see whether we are getting good results.
 
-8. Try a simple linear regression with all the data to see whether we are getting good results.
+7. Great! Now define a function that takes a list of models and train (and tests) them so we can try a lot of them without repeating code.
 
-9. Great! Now define a function that takes a list of models and train (and tests) them so we can try a lot of them without repeating code.
+8. Use the function to check `LinearRegressor` and `KNeighborsRegressor`.
 
-10. Use the function to check `LinearRegressor` and `KNeighborsRegressor`.
+9. You can check also the `MLPRegressor` for this task!
 
-11. You can check also the `MLPRegressor` for this task!
-
-12. Check and discuss the results.  
+10. Check and discuss the results.  
