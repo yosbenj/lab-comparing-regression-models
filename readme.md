@@ -30,7 +30,7 @@ Concatenate Numerical and Categorical dataframes into one dataframe called data.
 
 5. Since the model will only accept numerical data, check and make sure that every column is numerical, if some are not, change it using encoding.
 
-# ***********************************************************************************************************************
+# ***********************************************
 ## Hint for Categorical Variables
 
 You should deal with the categorical variables as shown below (for ordinal encoding, dummy code has been provided as well):
@@ -55,7 +55,7 @@ data["coverage"] = data["coverage"].map({"Basic" : 0, "Extended" : 1, "Premium" 
 given that column "coverage" in the dataframe "data" has three categories:
 
 "basic", "extended", and "premium" and values are to be represented in the same order.
-# ******************************************************************************************************************************
+# ******************************************************
 
 
 6. Try a simple linear regression with all the data to see whether we are getting good results.
