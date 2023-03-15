@@ -47,6 +47,9 @@ One hot | renew offercustomer_df
 One hot | sales channel
 One hot | vehicle class
 Ordinal | vehicle size
+Ordinal | education
+One hot | response
+One hot | gender
 
 ### Dummy code
 
@@ -54,7 +57,7 @@ data["coverage"] = data["coverage"].map({"Basic" : 0, "Extended" : 1, "Premium" 
 
 given that column "coverage" in the dataframe "data" has three categories:
 
-"basic", "extended", and "premium" and values are to be represented in the same order.
+"basic", "extended", and "premium" values are to be represented in the same order.
 # ******************************************************
 
 
