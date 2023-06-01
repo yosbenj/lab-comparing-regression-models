@@ -18,7 +18,7 @@ For this lab, we will be using the same dataset we used in the previous labs. Lo
 
 ### Instructions
 
-Concatenate Numerical and Categorical dataframes into one dataframe called data.
+Concatenate Numerical and Categorical dataframes into one dataframe called data. Split into X=features y=target.
 
 1. In this final lab, we will model our data. Import sklearn `train_test_split` and separate the data.
 
